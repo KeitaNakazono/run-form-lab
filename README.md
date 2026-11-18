@@ -31,3 +31,6 @@ npm run lint       # ESLint
 npm run typecheck  # 型チェック
 npm run build      # 本番ビルド
 ```
+
+- 開発サーバーの URL は `http://localhost:5173/run-form-lab/`（公開時と同じパス）。
+- 公開 URL：https://keitanakazono.github.io/run-form-lab/ （main へのマージで自動デプロイ）
