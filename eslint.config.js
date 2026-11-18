@@ -26,6 +26,11 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       '@typescript-eslint/no-explicit-any': 'error',
+      // 未実装の関数などで引数を受け取るだけの場合は _ を付ける（tsc の noUnusedParameters と同じ扱い）
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
       'no-restricted-globals': [
         'error',
         { name: 'fetch', message: networkMessage },

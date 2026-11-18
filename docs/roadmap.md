@@ -10,10 +10,10 @@
 - [x] **0-1 プロジェクト作成**
   Vite + React + TypeScript。ESLint / Prettier / Vitest。`npm run dev|test|lint|typecheck|build` が動く。
   完了条件：空の画面が表示され、CI（`.github/workflows/ci.yml`）が緑。
-- [ ] **0-2 GitHub Pages へのデプロイ**
+- [x] **0-2 GitHub Pages へのデプロイ**
   main へのマージで自動デプロイ。`vite.config.ts` の `base` 設定。
   完了条件：スマホで公開URLを開ける。
-- [ ] **0-3 ディレクトリ構成と AnalysisModule 型**
+- [x] **0-3 ディレクトリ構成と AnalysisModule 型**
   [spec.md §5.3, §5.4](spec.md) の骨組みを作る（中身は空でよい）。
 
 ## Phase 1：動画 → 棒人間
