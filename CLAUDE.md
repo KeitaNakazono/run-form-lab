@@ -31,7 +31,7 @@
   npm run lint && npm run typecheck && npm run test && npm run build
   ```
 - PR 本文は `.github/pull_request_template.md` に沿って書く（何を・なぜ・確認方法・スクリーンショット）。
-- PR を作ったら、本文の最後に `@codex review` のコメントを付けてレビューを依頼する（自動レビューを有効にしている場合は不要）。
+- PR を作ったら、PR のコメント欄（Conversation）に `@codex review` を投稿してレビューを依頼する。PR 本文に書くだけでは依頼した扱いにしない（自動レビューが起動した場合は追加投稿不要）。
 - Codex の指摘は P0/P1 を必ず修正。P2 以下は対応するか、理由を返信する。
 - 完了したら roadmap.md のチェックボックスを更新する。
 

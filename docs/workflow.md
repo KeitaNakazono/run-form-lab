@@ -21,7 +21,8 @@ roadmap.md ─▶ GitHub Issue ─▶ Claude Code がブランチで実装 ─�
 3. **Codex のコードレビューを有効にする**
    - Codex cloud にログインし、GitHub を接続してこのリポジトリを選ぶ。
    - Codex の設定でこのリポジトリのコードレビューを ON。
-   - 「自動レビュー（Automatic reviews）」を ON にすると、PR を出すたびに自動でレビューされる。OFF の場合は PR に `@codex review` とコメントする。
+   - 「自動レビュー（Automatic reviews）」を ON にすると、設定したトリガーで自動レビューされる。手動で依頼する場合は PR のコメント欄（Conversation）に `@codex review` を投稿する。PR 本文に書くだけでは依頼した扱いにしない。
+   - 既存 PR はコメントでレビューを依頼し、Codex の 👀 リアクションとレビュー結果を確認する。公式手順：https://learn.chatgpt.com/docs/third-party/github
    - レビューの観点はルートの `AGENTS.md` の「Review guidelines」に書いてある。
 4. **GitHub Pages**：Settings → Pages → Source を「GitHub Actions」に（Phase 0-2 で Claude Code がデプロイ用 workflow を追加する）。
 5. **ブランチ保護（推奨）**：Settings → Branches → main に「PR 必須」「CI 必須」。
@@ -40,7 +41,7 @@ GitHub Issue にしてください（gh コマンドを使用）。タイトル�
 
 ```
 CLAUDE.md と docs/spec.md を読んで、Issue [0-1] を実装してください。
-ブランチを切り、完了条件を満たしたら PR を作成し、本文末尾で @codex review を依頼してください。
+ブランチを切り、完了条件を満たしたら PR を作成し、PR のコメント欄に @codex review を投稿してください（自動レビューが起動した場合は追加投稿不要）。
 ```
 
 ### ③ 以降の各タスク
