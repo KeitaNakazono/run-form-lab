@@ -7,7 +7,7 @@
 
 ## Phase 0：土台
 
-- [ ] **0-1 プロジェクト作成**
+- [x] **0-1 プロジェクト作成**
   Vite + React + TypeScript。ESLint / Prettier / Vitest。`npm run dev|test|lint|typecheck|build` が動く。
   完了条件：空の画面が表示され、CI（`.github/workflows/ci.yml`）が緑。
 - [ ] **0-2 GitHub Pages へのデプロイ**
