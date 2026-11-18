@@ -5,6 +5,11 @@ export const ja = {
     tagline: '横から撮ったランニング動画を棒人間にして、腰の上下動と着地位置を見える化します。',
     preparing: '準備中です。',
   },
+  analyses: {
+    running: {
+      label: 'ランニング（横から）',
+    },
+  },
 } as const;
 
 export type Messages = typeof ja;
